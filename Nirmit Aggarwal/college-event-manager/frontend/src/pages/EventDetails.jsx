@@ -4,7 +4,7 @@ import { eventsAPI, registrationsAPI } from "../api";
 import { Card } from "../components/Card";
 import { Button } from "../components/Button";
 import { usePageTransition } from "../hooks/useAnimation";
-import { useAuth } from "../AuthContext";
+import { useAuth } from "../AuthContext.jsx";
 
 export default function EventDetails() {
   const { id } = useParams();

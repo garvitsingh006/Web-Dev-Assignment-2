@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthProvider, useAuth } from "./AuthContext";
+import { AuthProvider, useAuth } from "./AuthContext.jsx";
 import { Header } from "./components/Header";
 import LoginSignup from "./pages/LoginSignup";
 import EventsList from "./pages/EventsList";

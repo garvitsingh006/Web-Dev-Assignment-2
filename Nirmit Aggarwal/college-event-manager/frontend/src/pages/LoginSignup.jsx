@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../AuthContext";
+import { useAuth } from "../AuthContext.jsx";
 import { authAPI } from "../api";
 import { Button } from "../components/Button";
 import { usePageTransition } from "../hooks/useAnimation";

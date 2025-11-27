@@ -19,6 +19,7 @@ module.exports = {
       },
       borderWidth: {
         brutalist: "3px",
+        3: "3px",
       },
       letterSpacing: {
         brutalist: "0.1em",

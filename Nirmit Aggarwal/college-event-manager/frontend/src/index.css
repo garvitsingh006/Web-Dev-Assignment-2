@@ -97,3 +97,49 @@ select {
     opacity: 1;
   }
 }
+
+/* Emergency contrast / opacity override
+   This makes sure the UI is readable if Tailwind/PostCSS hasn't applied
+   or an animation leaves elements at low opacity. Remove after root cause
+   is fixed. */
+:root {
+  --emergency-text: #111111;
+  --emergency-bg: #ffffff;
+}
+
+html,
+body,
+#root {
+  color: var(--emergency-text) !important;
+  background-color: var(--emergency-bg) !important;
+}
+
+/* Ensure all elements are fully opaque and inherit readable color */
+* {
+  opacity: 1 !important;
+  filter: none !important;
+  color: inherit !important;
+}
+
+/* Make form controls readable */
+input,
+textarea,
+select,
+button {
+  color: var(--emergency-text) !important;
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  border-color: #000000 !important;
+}
+
+/* Make buttons and cards visible */
+.card-brutalist,
+.btn-brutalist,
+.btn-brutalist-yellow,
+.btn-brutalist-green,
+.btn-brutalist-purple {
+  background-color: #ffffff !important;
+  color: var(--emergency-text) !important;
+  border-color: #000000 !important;
+  opacity: 1 !important;
+}
